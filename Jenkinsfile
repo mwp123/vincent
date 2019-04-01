@@ -1,6 +1,5 @@
-pipeline {
-    agent any
-    stages {
+node {
+
         stage('Example') {
             steps {
                 echo 'Hello World'
@@ -8,8 +7,8 @@ pipeline {
         }
         stage('Example') {
             steps {
-                echo "Hello, ${PERSON}, nice to meet you."
+                echo "Hello, nice to meet you."
             }
         }
-    }
+   
 }
